@@ -13,6 +13,12 @@
 		BC5149A926624C950011B416 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5149A726624C950011B416 /* Main.storyboard */; };
 		BC5149AB26624C970011B416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC5149AA26624C970011B416 /* Assets.xcassets */; };
 		BC5149AE26624C970011B416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5149AC26624C970011B416 /* LaunchScreen.storyboard */; };
+		BC5149C2266286640011B416 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5149C1266286640011B416 /* AnalyticsManager.swift */; };
+		BC5149C4266286A40011B416 /* AnalyticsEventEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5149C3266286A40011B416 /* AnalyticsEventEnum.swift */; };
+		BC5149C72662879C0011B416 /* CloudKitAnalyticsEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5149C62662879C0011B416 /* CloudKitAnalyticsEngine.swift */; };
+		BC5149CA26628D230011B416 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5149C926628D230011B416 /* MessageViewController.swift */; };
+		BC5149CC26628E780011B416 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5149CB26628E780011B416 /* LoginViewController.swift */; };
+		BC5149CE26633A4A0011B416 /* MessageVCComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5149CD26633A4A0011B416 /* MessageVCComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		BC5149AA26624C970011B416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC5149AD26624C970011B416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC5149AF26624C970011B416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC5149C1266286640011B416 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		BC5149C3266286A40011B416 /* AnalyticsEventEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventEnum.swift; sourceTree = "<group>"; };
+		BC5149C62662879C0011B416 /* CloudKitAnalyticsEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitAnalyticsEngine.swift; sourceTree = "<group>"; };
+		BC5149C926628D230011B416 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		BC5149CB26628E780011B416 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BC5149CD26633A4A0011B416 /* MessageVCComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageVCComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +71,58 @@
 				BC5149A126624C950011B416 /* AppDelegate.swift */,
 				BC5149A326624C950011B416 /* SceneDelegate.swift */,
 				BC5149A526624C950011B416 /* ViewController.swift */,
+				BC5149C826628D160011B416 /* Module */,
+				BC5149C52662874E0011B416 /* Analytics */,
+				BC5149BE2662864C0011B416 /* AnalyticsEngine */,
 				BC5149A726624C950011B416 /* Main.storyboard */,
 				BC5149AA26624C970011B416 /* Assets.xcassets */,
 				BC5149AC26624C970011B416 /* LaunchScreen.storyboard */,
 				BC5149AF26624C970011B416 /* Info.plist */,
 			);
 			path = "Good_AppArchitecture-1";
+			sourceTree = "<group>";
+		};
+		BC5149BE2662864C0011B416 /* AnalyticsEngine */ = {
+			isa = PBXGroup;
+			children = (
+				BC5149C62662879C0011B416 /* CloudKitAnalyticsEngine.swift */,
+			);
+			path = AnalyticsEngine;
+			sourceTree = "<group>";
+		};
+		BC5149C52662874E0011B416 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				BC5149C3266286A40011B416 /* AnalyticsEventEnum.swift */,
+				BC5149C1266286640011B416 /* AnalyticsManager.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		BC5149C826628D160011B416 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				BC5149D026633A590011B416 /* Login */,
+				BC5149CF26633A4E0011B416 /* Message */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		BC5149CF26633A4E0011B416 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				BC5149CD26633A4A0011B416 /* MessageVCComposer.swift */,
+				BC5149C926628D230011B416 /* MessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		BC5149D026633A590011B416 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BC5149CB26628E780011B416 /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +195,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5149CE26633A4A0011B416 /* MessageVCComposer.swift in Sources */,
+				BC5149C4266286A40011B416 /* AnalyticsEventEnum.swift in Sources */,
+				BC5149C72662879C0011B416 /* CloudKitAnalyticsEngine.swift in Sources */,
 				BC5149A626624C950011B416 /* ViewController.swift in Sources */,
 				BC5149A226624C950011B416 /* AppDelegate.swift in Sources */,
+				BC5149CC26628E780011B416 /* LoginViewController.swift in Sources */,
+				BC5149C2266286640011B416 /* AnalyticsManager.swift in Sources */,
 				BC5149A426624C950011B416 /* SceneDelegate.swift in Sources */,
+				BC5149CA26628D230011B416 /* MessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
