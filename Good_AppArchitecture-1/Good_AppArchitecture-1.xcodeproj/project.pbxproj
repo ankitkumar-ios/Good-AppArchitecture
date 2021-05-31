@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0F749526647F88005EEDE5 /* AnalyticsComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F749426647F88005EEDE5 /* AnalyticsComposer.swift */; };
 		BC5149A226624C950011B416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5149A126624C950011B416 /* AppDelegate.swift */; };
 		BC5149A426624C950011B416 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5149A326624C950011B416 /* SceneDelegate.swift */; };
 		BC5149A626624C950011B416 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5149A526624C950011B416 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC0F749426647F88005EEDE5 /* AnalyticsComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsComposer.swift; sourceTree = "<group>"; };
 		BC51499E26624C950011B416 /* Good_AppArchitecture-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Good_AppArchitecture-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC5149A126624C950011B416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC5149A326624C950011B416 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			children = (
 				BC5149C3266286A40011B416 /* AnalyticsEventEnum.swift */,
 				BC5149C1266286640011B416 /* AnalyticsManager.swift */,
+				BC0F749426647F88005EEDE5 /* AnalyticsComposer.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			files = (
 				BC5149CE26633A4A0011B416 /* MessageVCComposer.swift in Sources */,
 				BC5149C4266286A40011B416 /* AnalyticsEventEnum.swift in Sources */,
+				BC0F749526647F88005EEDE5 /* AnalyticsComposer.swift in Sources */,
 				BC5149C72662879C0011B416 /* CloudKitAnalyticsEngine.swift in Sources */,
 				BC5149A626624C950011B416 /* ViewController.swift in Sources */,
 				BC5149A226624C950011B416 /* AppDelegate.swift in Sources */,

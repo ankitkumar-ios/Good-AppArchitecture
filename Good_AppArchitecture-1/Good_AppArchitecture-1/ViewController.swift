@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 	}
 	
 	func setupMessageViewController(){
-		let messageComposer = MessageVCComposer()
+		let messageComposer = AnalyticsComposer()
 		guard let messageVC = self.storyboard?.instantiateViewController(identifier: "MessageViewController") as? MessageViewController else {return}
 		messageVC.composer = messageComposer
 		self.present(messageVC, animated: true, completion: nil)

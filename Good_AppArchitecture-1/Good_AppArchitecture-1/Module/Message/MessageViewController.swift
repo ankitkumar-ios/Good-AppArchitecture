@@ -8,8 +8,8 @@
 import UIKit
 
 class MessageViewController: UIViewController {
-	var composer: MessageVCComposer?
 	var analytics: AnalyticsManager?
+	var composer: AnalyticsComposer?
 		
 	override func viewDidLoad() {
 		super.viewDidLoad()

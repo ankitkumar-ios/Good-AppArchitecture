@@ -8,10 +8,5 @@
 import Foundation
 
 class MessageVCComposer {
-	var analytics: AnalyticsManager
-	
-	init(){
-		analytics = AnalyticsManager.init(engine: CloudKitAnalyticsEngine())
-	}
-	
+
 }
